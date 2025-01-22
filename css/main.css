@@ -86,6 +86,12 @@ button {
     input{
         width: 270px;
     }
+    .item{
+        padding: 10px 20px !important;
+    }
+    .item span{
+        font-size: 15px;
+    }
 }
 
 .list {
