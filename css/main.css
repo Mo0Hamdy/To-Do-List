@@ -11,9 +11,13 @@ body{
     background-image: url(../images/1354020.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
     font-family: 'ABeeZee';
-    background-color: yellowgreen;
+}
+
+::placeholder{
+    color: #ccc;
 }
 
 .container {
@@ -78,6 +82,12 @@ button {
     }
 }
 
+@media (max-width: 400px){
+    input{
+        width: 270px;
+    }
+}
+
 .list {
     display: grid;
     grid-template-columns: 1fr;
@@ -106,8 +116,8 @@ button {
     opacity: 1;
     transform: scale(1.2);
 }
-::placeholder{
-    color: #ccc;
-}
+
+
+
 
 
