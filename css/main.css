@@ -8,10 +8,10 @@
 }
 
 body{
-    background-image: url(../images/1354020.png);
+    background-image: url(../images/1354020.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 40%;
     background-attachment: fixed;
     font-family: 'ABeeZee';
 }
