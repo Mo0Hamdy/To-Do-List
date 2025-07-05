@@ -3,7 +3,7 @@ let btn = document.querySelector(".main");
 let list = document.querySelector(".list");
 let tasks = [];
 let mode = "create";
-let regex = /^[a-zA-Z0-9]+$/;
+let regex = /^[a-zA-Z0-9 ]+$/;
 let globalIndex = null;
 if (localStorage.tasks != null) {
   tasks = JSON.parse(localStorage.tasks);
@@ -59,7 +59,7 @@ function Delete(i) {
 
 function getData() {
   let task = input.value;
-  if (task.trim() !== "" && regex.test(task)) {
+  if (task !== "" && regex.test(task)) {
     if (mode === "create") {
       tasks.push(task);
     } else {
